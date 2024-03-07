@@ -87,6 +87,9 @@ nav ul li a {
 .headeremail{
     float: left;
     margin-left: 5%;
+    animation-name: headeremail-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
 }
 
 .headertel {
@@ -127,11 +130,11 @@ a {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 12%;
+    padding-top: 22%;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: backwards;
-    padding-top: 22%;
-}
+    }
 
 #hero-outer{
     height:500px;
@@ -149,6 +152,25 @@ a {
         transform: scale(1.1);
     }
 }
+
+#hero-overlay {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    background-color: rgb(202, 202, 202, 0.7);
+    color: #0d286d;
+    border-radius: 5px;
+    width: 15%;
+    height: fit-content;
+   
+    text-align: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    font-size: 3vw; /* Font size relative to the viewport width */
+
+    font-family: sans-serif;
+    text-shadow: 10px 16px 40px rgba(0, 0, 0, 0.8); /* Adding shadow effect */
+}
+
 
 /* menu */
 
