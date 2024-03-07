@@ -1,7 +1,7 @@
 /* body */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin-top: 2%;
     background-color: #0d286d;
 }
@@ -101,8 +101,7 @@ a {
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
     #heroimage {
-        height: 300px; /* Adjust height for mobile devices */
-        margin-top: 40%; /* Adjust margin-top for mobile devices */
+        zoom: 75%;
     }
 }
 
@@ -121,15 +120,16 @@ a {
 
 #heroimage {
     height: 500px;
-    position: static;
-    background: url(https://insanelygoodrecipes.com/wp-content/uploads/2020/02/Burger-and-Fries.jpg) no-repeat center center;
+    background-image: url('https://insanelygoodrecipes.com/wp-content/uploads/2020/02/Burger-and-Fries.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
     margin-left: 5%;
     margin-right: 5%;
-    border-radius: 50px;
+    margin-top: 12%;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: backwards;
-    background-size: cover;
     padding-top: 22%;
 }
 
