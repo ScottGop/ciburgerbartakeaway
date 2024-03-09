@@ -12,6 +12,11 @@ body {
     padding-top: 150px;
     margin-top: -150px;
   }
+
+  ul { 
+    list-style-type: none;
+     }
+
 /* Header */
 
 header {
@@ -48,6 +53,8 @@ h2 {
     padding-left: 5%;
     text-decoration-line: none;
     text-shadow: 10px 16px 40px rgba(0, 0, 0, 0.8); /* Adding shadow effect */
+    margin-bottom: 1%;
+    margin-top: 2%;
 
 }
 
@@ -64,7 +71,7 @@ nav ul {
     list-style-type: none;
     padding: 1%;
     margin: 0;
-    font-size: 150%;
+    font-size: 175%;
     letter-spacing: 1%;
 }
 
@@ -75,8 +82,8 @@ nav ul a:hover{
 
 nav ul li {
     display: inline;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
     padding: 1px;
 }
 
@@ -123,6 +130,16 @@ a {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    /* Override original styling */
+    #burgerlist,
+    #extralist,
+    #drinkslist {
+        margin: 0 auto; /* Center horizontally */
+        width: 80%; /* Adjust the width for mobile screens */
+        max-width: none;
+    }
+}
 
 /* about us */
 
@@ -160,19 +177,16 @@ a {
 
 #hero-overlay {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 10%;
     background-color: rgb(202, 202, 202, 0.7);
     color: #0d286d;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 15%;
     height: fit-content;
    
     text-align: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
     font-size: 3vw; /* Font size relative to the viewport width */
-
-    font-family: sans-serif;
     text-shadow: 10px 16px 40px rgba(0, 0, 0, 0.8); /* Adding shadow effect */
 }
 
@@ -180,7 +194,7 @@ a {
 /* menu */
 
 #menudivborder {
-    height: 1200px;
+    height: fit-content;
     border: 5px solid rgb(202, 202, 202);
     border-radius: 50px;
     background-color: rgb(202, 202, 202);
@@ -189,50 +203,97 @@ a {
     margin-top: 1%;
 }
 
-#burgerlist {
+.burger-lists{
+    text-align: center;
     font-family: sans-serif;
-    font-size: 4vh;
     color: #0d286d;
-    border: 2px solid;
-    border-color: #0d286d;
-    border-radius: 20%;
-    margin-left: 3%;
-    width: 30%;
-    height: fit-content;
-    text-align: left;
-    padding-left: 7%;
-    padding-bottom: 3%;
+    font-size: 150%;
 }
 
-    #extralist {
-    font-family: sans-serif;
-    font-size: 4vh;
-    color: #0d286d;
-    border: 2px solid;
-    border-color: #0d286d;
-    border-radius: 20%;
-    margin-left: 3%;
-    width: 30%;
-    height: fit-content;
+.burger-lists ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
     text-align: left;
-    padding-left: 7%;
-    padding-bottom: 3%;
+}
 
-    }
+.burger-lists ul {
+    display: inline-block; /* Display list items in a row */
+    margin-left: 6%; /* Add some spacing between list items */
+    margin-right: 6%;
+    padding-bottom: 5%;
+}
 
-    #drinkslist {
-    font-family: sans-serif;
-    font-size: 4vh;
-    color: #0d286d;
+.burger-lists {
     border: 2px solid;
-    border-color: #0d286d;
-    border-radius: 20%;
-    margin-left: 3%;
-    width: 30%;
-    height: fit-content;
+    color: #0d286d;
+    width: 90%;
+    position: center;
+    margin: auto;
+    border-radius: 50px;
+    margin-bottom: 2%;
+}
+
+.extras-lists{
+    text-align: center;
+    font-family: sans-serif;
+    color: #0d286d;
+    font-size: 150%;
+}
+
+.extras-lists ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
     text-align: left;
-    padding-left: 7%;
-    padding-bottom: 3%;
+}
+
+.extras-lists ul {
+    display: inline-block; /* Display list items in a row */
+    margin-left: 5%; /* Add some spacing between list items */
+    margin-right: 5%;
+    padding-bottom: 5%;
+}
+
+.extras-lists {
+    border: 2px solid;
+    color: #0d286d;
+    width: 90%;
+    position: center;
+    margin: auto;
+    margin-bottom: 2%;
+    border-radius: 50px;
+}
+
+.drinks-lists{
+    text-align: center;
+    font-family: sans-serif;
+    color: #0d286d;
+    font-size: 150%;
+}
+
+.drinks-lists ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.drinks-lists ul {
+    display: inline-block; /* Display list items in a row */
+    margin-left: 9%; /* Add some spacing between list items */
+    margin-right: 9%;
+    padding-bottom: 5%;
+}
+
+.drinks-lists {
+    border: 2px solid;
+    color: #0d286d;
+    width: 90%;
+    position: center;
+    margin: auto;
+    margin-bottom: 2%;
+    border-radius: 50px;
 }
 
 /* reviews */
