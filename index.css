@@ -227,8 +227,20 @@ a {
 .burger-lists {
     border: 2px solid;
     color: #0d286d;
-    width: 90%;
+    width: 60%;
     position: center;
+    margin: auto;
+    border-radius: 50px;
+    margin-bottom: 2%;
+}
+
+#menu-image-one{
+    height: 300px;
+    width: 300px;
+    background-image: url('https://in-sight.symrise.com/fileadmin/_processed_/9/e/csm_burger_5d312062eb.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
     margin: auto;
     border-radius: 50px;
     margin-bottom: 2%;
@@ -258,11 +270,23 @@ a {
 .extras-lists {
     border: 2px solid;
     color: #0d286d;
-    width: 90%;
+    width: 60%;
     position: center;
     margin: auto;
     margin-bottom: 2%;
     border-radius: 50px;
+}
+
+#menu-image-two{
+    height: 300px;
+    width: 300px;
+    background-image: url('https://www.foodiesfeed.com/wp-content/uploads/2023/05/french-fries.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50px;
+    margin-bottom: 2%;
 }
 
 .drinks-lists{
@@ -289,7 +313,7 @@ a {
 .drinks-lists {
     border: 2px solid;
     color: #0d286d;
-    width: 90%;
+    width: 60%;
     position: center;
     margin: auto;
     margin-bottom: 2%;
