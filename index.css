@@ -59,7 +59,7 @@ h2 {
 }
 
 h3 {
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -116,7 +116,7 @@ a {
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
     #heroimage {
-        zoom: 75%;
+        zoom: 90%;
     }
 }
 
@@ -131,20 +131,24 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Override original styling */
-    #burgerlist,
-    #extralist,
-    #drinkslist {
-        margin: 0 auto; /* Center horizontally */
-        width: 80%; /* Adjust the width for mobile screens */
-        max-width: none;
+    .burger-lists {
+        border: 2px solid;
+        color: #0d286d;
+        width: 90%; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .burger-lists {
+        margin: 0 10%; /* Adjust the margin for mobile devices */
+        width: 90%;
     }
 }
 
 /* about us */
 
 #heroimage {
-    height: 500px;
+    height: 350px;
     background-image: url('https://insanelygoodrecipes.com/wp-content/uploads/2020/02/Burger-and-Fries.jpg');
     background-size: cover;
     background-position: center;
@@ -152,6 +156,7 @@ a {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 12%;
+    margin-bottom: 0;
     padding-top: 22%;
     animation-name: hero-zoom;
     animation-duration: 5s;
@@ -175,29 +180,13 @@ a {
     }
 }
 
-#hero-overlay {
-    position: absolute;
-    top: 55%;
-    left: 10%;
-    background-color: rgb(202, 202, 202, 0.7);
-    color: #0d286d;
-    border-radius: 20px;
-    width: 15%;
-    height: fit-content;
-   
-    text-align: center; /* Horizontal centering */
-    font-size: 3vw; /* Font size relative to the viewport width */
-    text-shadow: 10px 16px 40px rgba(0, 0, 0, 0.8); /* Adding shadow effect */
-}
-
-
 /* menu */
 
 #menudivborder {
     height: fit-content;
     border: 5px solid rgb(202, 202, 202);
     border-radius: 50px;
-    background-color: rgb(202, 202, 202);
+    background: rgb(202, 202, 202);
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 1%;
@@ -208,6 +197,7 @@ a {
     font-family: sans-serif;
     color: #0d286d;
     font-size: 150%;
+    font-weight: 700;
 }
 
 .burger-lists ul {
@@ -230,8 +220,8 @@ a {
     width: 60%;
     position: center;
     margin: auto;
-    border-radius: 50px;
     margin-bottom: 2%;
+    border-radius: 50px;
 }
 
 #menu-image-one{
@@ -244,6 +234,42 @@ a {
     margin: auto;
     border-radius: 50px;
     margin-bottom: 2%;
+
+}
+#menu-image-one-border{
+    border: 2px solid;
+    color: #0d286d;
+    width: 60%;
+    position: center;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-top: 1%;
+    border-radius: 50px;
+    background-image: url('https://m.media-amazon.com/images/I/71O7DoScYnL._AC_SX679_.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#menu-image-one:hover{
+    animation-name: menu-image-one-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    }
+
+#menu-image-one-outer{
+    height:350px;
+    width: 350px;
+    overflow: hidden;
+}
+
+@keyframes menu-image-one-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
 }
 
 .extras-lists{
@@ -289,12 +315,48 @@ a {
     margin-bottom: 2%;
 }
 
+#menu-image-two-border{
+    border: 2px solid;
+    color: #0d286d;
+    width: 60%;
+    position: center;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-top: 1%;
+    border-radius: 50px;
+    background-image: url('https://m.media-amazon.com/images/I/71O7DoScYnL._AC_SX679_.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#menu-image-two:hover{
+    animation-name: menu-image-two-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    }
+
+#menu-image-two-outer{
+    height:350px;
+    width: 350px;
+    overflow: hidden;
+}
+
+@keyframes menu-image-two-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
 .drinks-lists{
     text-align: center;
     font-family: sans-serif;
     color: #0d286d;
     font-size: 150%;
-}
+    }
 
 .drinks-lists ul {
     list-style: none; /* Remove default list styles */
@@ -375,5 +437,5 @@ footer{
 
 .social-websites a {
     color: #0d286d;; /* Adjust the color of the icons if needed */
-    font-size: 200%; /* Adjust the size of the icons if needed */
+    font-size: 300%; /* Adjust the size of the icons if needed */
 }
