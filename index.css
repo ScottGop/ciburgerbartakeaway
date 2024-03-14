@@ -61,6 +61,7 @@ h2 {
 h3 {
     text-decoration: none;
     font-weight: bold;
+    color: #0d286d;
 }
 
 nav {
@@ -99,9 +100,6 @@ nav ul li a {
 .headeremail{
     float: left;
     margin-left: 5%;
-    animation-name: headeremail-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: backwards;
 }
 
 .headertel {
@@ -397,13 +395,54 @@ a {
 /* map section */
 
 #mapdivborder {
-    height: 600px;
+    height: fit-content;
     border: 5px solid rgb(202, 202, 202);
     border-radius: 50px;
     background-color: rgb(202, 202, 202);
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#map {
+    display: inline-block;
+    width: 42%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 125%;
+    color: #0d286d;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    }
+
+#map {
+    border: 2px solid;
+    color: #0d286d;
+    width:45%;
+    margin: auto;
+    margin-bottom: 2%;
+    border-radius: 50px;
+}
+
+#openingtimes{
+    display: inline-block;
+    width: 45%;
+    margin-left: 1%;
+    font-size: 125%;
+    color: #0d286d;
+}
+
+#openingtimes {
+    border: 2px solid;
+    color: #0d286d;
+    width:45%;
+    margin: auto;
+    margin-bottom: 2%;
+    border-radius: 50px;
+    height: fit-content;
 }
 
 
@@ -438,4 +477,10 @@ footer{
 .social-websites a {
     color: #0d286d;; /* Adjust the color of the icons if needed */
     font-size: 300%; /* Adjust the size of the icons if needed */
+}
+
+#copyright {
+    font-size: 90%;
+    letter-spacing: 1%;
+    margin-left: 5%;
 }
