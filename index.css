@@ -6,6 +6,12 @@ body {
     background-color: #0d286d;
 }
 
+section {
+    margin-left: 1%;
+    margin-right: 1%;
+    align-items: center;
+}
+
 
 .target { /* This works with the Navigation Bar Titles (ID anchor links) 
     this adds buffer to the end location to accomidate the fixed header bar */
@@ -13,10 +19,13 @@ body {
     margin-top: -150px;
   }
 
-  ul { 
+ul { 
     list-style-type: none;
      }
 
+li { 
+    list-style-type: none;
+     }
 /* Header */
 
 header {
@@ -37,7 +46,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 300%;
+    font-size: 450%;
     text-align: center; /* Center the heading */
     color: #0d286d;
     padding-top: 1%;
@@ -143,6 +152,14 @@ a {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    header {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+
 /* about us */
 
 #heroimage {
@@ -151,6 +168,7 @@ a {
     background-size: cover;
     background-position: center;
     border-radius: 50px;
+    border: solid 5px rgb(202, 202, 202);
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 12%;
@@ -191,40 +209,33 @@ a {
 }
 
 .burger-lists{
-    text-align: center;
-    font-family: sans-serif;
     color: #0d286d;
-    font-size: 150%;
     font-weight: 700;
+    font-size: 3vh;
+    position: center;
 }
 
-.burger-lists ul {
-    list-style: none; /* Remove default list styles */
-    margin: 0;
-    padding: 0;
+.burger-lists td{
     text-align: left;
-}
-
-.burger-lists ul {
-    display: inline-block; /* Display list items in a row */
-    margin-left: 6%; /* Add some spacing between list items */
-    margin-right: 6%;
-    padding-bottom: 5%;
 }
 
 .burger-lists {
     border: 2px solid;
     color: #0d286d;
-    width: 60%;
-    position: center;
     margin: auto;
+    width: 60%;
     margin-bottom: 2%;
     border-radius: 50px;
+    padding: 3%
 }
 
+#heading {
+    font-size: 125%;
+    text-decoration: underline;
+}
 #menu-image-one{
-    height: 300px;
-    width: 300px;
+    height: 40vh;
+    width: 40vw;
     background-image: url('https://in-sight.symrise.com/fileadmin/_processed_/9/e/csm_burger_5d312062eb.jpg');
     background-size: cover;
     background-position: center;
@@ -299,11 +310,12 @@ a {
     margin: auto;
     margin-bottom: 2%;
     border-radius: 50px;
+    padding: 3%;
 }
 
 #menu-image-two{
-    height: 300px;
-    width: 300px;
+    height: 40vh;
+    width: 40vw;
     background-image: url('https://www.foodiesfeed.com/wp-content/uploads/2023/05/french-fries.jpg');
     background-size: cover;
     background-position: center;
@@ -378,24 +390,13 @@ a {
     margin: auto;
     margin-bottom: 2%;
     border-radius: 50px;
+    padding: 3%;
 }
 
 /* reviews */
 
 #reviewdivborder {
-    height: 600px;
-    border: 5px solid rgb(202, 202, 202);
-    border-radius: 50px;
-    background-color: rgb(202, 202, 202);
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 1%;
-}
-
-/* map section */
-
-#mapdivborder {
-    height: fit-content;
+    height: 800px;
     border: 5px solid rgb(202, 202, 202);
     border-radius: 50px;
     background-color: rgb(202, 202, 202);
@@ -405,65 +406,193 @@ a {
     margin-bottom: 1%;
 }
 
-#map {
-    display: inline-block;
-    width: 42%;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding-left: 1%;
-    padding-right: 1%;
-    font-size: 125%;
-    color: #0d286d;
-    margin-bottom: 2%;
-    padding-bottom: 2%;
-    }
-
-#map {
-    border: 2px solid;
-    color: #0d286d;
-    width:45%;
-    margin: auto;
-    margin-bottom: 2%;
-    border-radius: 50px;
+#left-side {
+    width: 50%;
+    float: left;
 }
 
-#openingtimes{
-    display: inline-block;
-    width: 45%;
-    margin-left: 1%;
+#left-side {
+    border: 2px solid;
+    color: #0d286d;
+    width: 35%;
+    margin-bottom: 2%;
+    border-radius: 50px;
+    padding: 3%;
+    margin-left: 5%;
+}
+
+#right-side {
+    width: 50%;
+    float: right;
+}
+
+#right-side {
+    border: 2px solid;
+    color: #0d286d;
+    width: 35%;
+    margin-bottom: 2%;
+    border-radius: 50px;
+    padding: 3%;
+    margin-right: 5%;
+}
+
+#review-one {
     font-size: 125%;
     color: #0d286d;
+    margin-left: 10%;
+}
+
+#review-header-one {
+    font-size: 200%;
+    color: #0d286d;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+#review-two {
+    font-size: 125%;
+    color: #0d286d;
+    margin-left: 10%;
+}
+
+#review-header-two {
+    font-size: 200%;
+    color: #0d286d;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+#ian-burger {
+    background: url('https://img.freepik.com/free-photo/man-eats-greedily-delicious-hamburger-feels-very-hungry-consumes-fast-food-wears-round-spectacles-jumper_273609-51713.jpg?w=900&t=st=1710511317~exp=1710511917~hmac=d43b8888985c0bbe122ae6c436b369258d6aa1c5b4a0064f9f141c031d594fe0') center;
+    height: 600px;
+    zoom: 50%;
+    border-radius: 50%;
+    color: #0d286d;
+    border: 2px solid ;
+}
+
+#kayls-burger {
+    background: url('https://img.freepik.com/premium-photo/woman-eating-burger_746318-5160.jpg?w=900');
+    height: 600px;
+    zoom: 50%;
+    border-radius: 50%;
+    color: #0d286d;
+    border: 2px solid ;
+}
+
+button {
+    margin-top: 2%;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 200%;
+    color: #0d286d;
+    font-weight: 700;
+    border-radius: 50px;
+    height: 100px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 2.0);
+}
+
+button:hover{
+    background-color: #0d286d;
+    color: rgb(202, 202, 202);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.0);
+}
+/* map section */
+
+#mapdivborder {
+    height: fit-content;
+    border: 5px solid rgb(202, 202, 202);
+    border-radius: 50px;
+    background: url('https://facts.net/wp-content/uploads/2023/07/french-fries-background-730x487.jpeg') center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#find {
+    border: 2px solid #0d286d;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(202, 202, 202);
+    margin-left: 2%;
+    border-radius: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+}
+
+#address {
+    margin-left: 5%;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#address-map {
+    display: inline-block;
+    border: 2px solid;
+    color: #0d286d;
+    background: rgb(202, 202, 202);
+    height: 350px;
+    width: 46%;
+    position: left;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    border-radius: 50px;
+
+}
+
+#googlemaps {
+    margin-left: 2%;
 }
 
 #openingtimes {
+    display: inline-block;
     border: 2px solid;
+    background: rgb(202, 202, 202);
     color: #0d286d;
-    width:45%;
-    margin: auto;
+    height: 350px;
+    width: 46%;
+    float: right;
     margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 2%;
     border-radius: 50px;
-    height: fit-content;
+
 }
 
+#opening-title {
+    margin-left: 5%;
+    font-size: 3vh;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.opening-hours-table {
+    margin-left: 25%;
+    margin-right: 5%;
+    font-size: 3vh;
+    text-align: left;
+}
 
 /* footer */
-footer{
-    background-color: rgb(202, 202, 202);
-    color: #0d286d;
-    width: 98%;
-    max-height: 22%;
+footer {
     height: fit-content;
-    top: 0;
+    border: 5px solid rgb(202, 202, 202);
     border-radius: 50px;
+    background-color: rgb(202, 202, 202);
+    margin-left: 3%;
+    margin-right: 3%;
     margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 0%;
-    padding:1%;
+    margin-bottom: 2%;
 }
-
-
-.social-websites {
+.social-websites{
     list-style: none;
     padding: 0;
     text-align: center;
@@ -474,13 +603,7 @@ footer{
     margin: 0 5%; /* Add some space between the icons */
 }
 
-.social-websites a {
+.social-websites a{
     color: #0d286d;; /* Adjust the color of the icons if needed */
     font-size: 300%; /* Adjust the size of the icons if needed */
-}
-
-#copyright {
-    font-size: 90%;
-    letter-spacing: 1%;
-    margin-left: 5%;
 }
